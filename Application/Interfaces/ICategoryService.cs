@@ -9,6 +9,6 @@ namespace Application.Interfaces
     public interface ICategoryService
     {
         //Task<IEnumerable<Category>> ListAsync();
-        Category GetAll();
+        IEnumerable<Category> GetAll();
     }
 }
