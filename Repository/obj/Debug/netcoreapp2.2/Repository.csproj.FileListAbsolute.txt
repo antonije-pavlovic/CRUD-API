@@ -1,0 +1,8 @@
+C:\Users\Antonije\source\repos\CRUD-API\Repository\bin\Debug\netcoreapp2.2\Repository.deps.json
+C:\Users\Antonije\source\repos\CRUD-API\Repository\bin\Debug\netcoreapp2.2\Repository.dll
+C:\Users\Antonije\source\repos\CRUD-API\Repository\bin\Debug\netcoreapp2.2\Repository.pdb
+C:\Users\Antonije\source\repos\CRUD-API\Repository\obj\Debug\netcoreapp2.2\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Antonije\source\repos\CRUD-API\Repository\obj\Debug\netcoreapp2.2\Repository.AssemblyInfoInputs.cache
+C:\Users\Antonije\source\repos\CRUD-API\Repository\obj\Debug\netcoreapp2.2\Repository.AssemblyInfo.cs
+C:\Users\Antonije\source\repos\CRUD-API\Repository\obj\Debug\netcoreapp2.2\Repository.dll
+C:\Users\Antonije\source\repos\CRUD-API\Repository\obj\Debug\netcoreapp2.2\Repository.pdb

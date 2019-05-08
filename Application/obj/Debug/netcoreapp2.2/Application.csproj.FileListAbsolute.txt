@@ -1,0 +1,12 @@
+C:\Users\Antonije\source\repos\CRUD-API\Application\obj\Debug\netcoreapp2.2\Application.csprojAssemblyReference.cache
+C:\Users\Antonije\source\repos\CRUD-API\Application\obj\Debug\netcoreapp2.2\Application.csproj.CoreCompileInputs.cache
+C:\Users\Antonije\source\repos\CRUD-API\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfoInputs.cache
+C:\Users\Antonije\source\repos\CRUD-API\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfo.cs
+C:\Users\Antonije\source\repos\CRUD-API\Application\bin\Debug\netcoreapp2.2\Application.deps.json
+C:\Users\Antonije\source\repos\CRUD-API\Application\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Antonije\source\repos\CRUD-API\Application\bin\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Antonije\source\repos\CRUD-API\Application\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Antonije\source\repos\CRUD-API\Application\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Antonije\source\repos\CRUD-API\Application\obj\Debug\netcoreapp2.2\Application.csproj.CopyComplete
+C:\Users\Antonije\source\repos\CRUD-API\Application\obj\Debug\netcoreapp2.2\Application.dll
+C:\Users\Antonije\source\repos\CRUD-API\Application\obj\Debug\netcoreapp2.2\Application.pdb
