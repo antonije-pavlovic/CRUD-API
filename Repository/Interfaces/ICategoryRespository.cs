@@ -8,5 +8,6 @@ namespace Repository.Interfaces
     public interface ICategoryRespository
     {
         IEnumerable<Category> GetAll();
+        void Insert(Category dto);
     }
 }

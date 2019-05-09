@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.DataTransfer;
 using Application.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -33,10 +34,11 @@ namespace API.Controllers
 
         // POST: api/Categories
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] CategoryDTO dto)
         {
+            _categoryService.Insert(dto);
         }
-
+        
         // PUT: api/Categories/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)

@@ -1,4 +1,5 @@
-﻿using Domain.Models;
+﻿using Application.DataTransfer;
+using Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,5 +11,6 @@ namespace Application.Interfaces
     {
         //Task<IEnumerable<Category>> ListAsync();
         IEnumerable<Category> GetAll();
+        void Insert(CategoryDTO dto);
     }
 }

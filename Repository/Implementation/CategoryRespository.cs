@@ -14,5 +14,11 @@ namespace Repository.Implementation
         {
             return _context.Categories;
         }
+
+        public void Insert(Category dto)
+        {
+            _context.Categories.Add(dto);
+            _context.SaveChanges(); //prebaci u Unity Of Work
+        }
     }
 }
