@@ -15,6 +15,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Repository.Implementation;
 using Repository.Interfaces;
+using Repository.UnitOfWork;
 
 namespace API
 {
@@ -37,6 +38,7 @@ namespace API
             });
             services.AddScoped<ICategoryRespository, CategoryRespository>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

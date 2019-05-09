@@ -1,6 +1,7 @@
 ﻿using DataAccess;
 using Domain.Models;
 using Repository.Interfaces;
+using Repository.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +10,11 @@ namespace Repository.Implementation
 {
     public class CategoryRespository : BaseRepository, ICategoryRespository
     {
-        public CategoryRespository(Context context): base(context) { }
+        private readonly IUnitOfWork _unitOfWork;
+        public CategoryRespository(Context context,IUnitOfWork unitOfWork): base(context)
+        {
+            _unitOfWork = unitOfWork;
+        }
         public IEnumerable<Category> GetAll()
         {
             return _context.Categories;
@@ -17,8 +22,20 @@ namespace Repository.Implementation
 
         public void Insert(Category dto)
         {
-            _context.Categories.Add(dto);
-            _context.SaveChanges(); //prebaci u Unity Of Work
+            try
+            {
+                _context.Categories.Add(dto);
+                this.Save();
+            }
+            catch(Exception e)
+            {
+                
+            }
+        }
+
+        public void Save()
+        {
+            _unitOfWork.Save();
         }
     }
 }

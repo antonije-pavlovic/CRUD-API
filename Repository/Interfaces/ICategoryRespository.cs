@@ -9,5 +9,6 @@ namespace Repository.Interfaces
     {
         IEnumerable<Category> GetAll();
         void Insert(Category dto);
+        void Save();
     }
 }
