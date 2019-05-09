@@ -6,3 +6,9 @@ C:\Users\Antonije\source\repos\CRUD-API\Repository\obj\Debug\netcoreapp2.2\Repos
 C:\Users\Antonije\source\repos\CRUD-API\Repository\obj\Debug\netcoreapp2.2\Repository.AssemblyInfo.cs
 C:\Users\Antonije\source\repos\CRUD-API\Repository\obj\Debug\netcoreapp2.2\Repository.dll
 C:\Users\Antonije\source\repos\CRUD-API\Repository\obj\Debug\netcoreapp2.2\Repository.pdb
+C:\Users\Antonije\source\repos\CRUD-API\Repository\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\Antonije\source\repos\CRUD-API\Repository\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Antonije\source\repos\CRUD-API\Repository\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\Antonije\source\repos\CRUD-API\Repository\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Antonije\source\repos\CRUD-API\Repository\obj\Debug\netcoreapp2.2\Repository.csprojAssemblyReference.cache
+C:\Users\Antonije\source\repos\CRUD-API\Repository\obj\Debug\netcoreapp2.2\Repository.csproj.CopyComplete

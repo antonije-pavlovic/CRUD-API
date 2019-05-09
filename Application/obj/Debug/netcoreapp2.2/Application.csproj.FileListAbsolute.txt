@@ -10,3 +10,7 @@ C:\Users\Antonije\source\repos\CRUD-API\Application\bin\Debug\netcoreapp2.2\Doma
 C:\Users\Antonije\source\repos\CRUD-API\Application\obj\Debug\netcoreapp2.2\Application.csproj.CopyComplete
 C:\Users\Antonije\source\repos\CRUD-API\Application\obj\Debug\netcoreapp2.2\Application.dll
 C:\Users\Antonije\source\repos\CRUD-API\Application\obj\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Antonije\source\repos\CRUD-API\Application\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\Antonije\source\repos\CRUD-API\Application\bin\Debug\netcoreapp2.2\Repository.dll
+C:\Users\Antonije\source\repos\CRUD-API\Application\bin\Debug\netcoreapp2.2\Repository.pdb
+C:\Users\Antonije\source\repos\CRUD-API\Application\bin\Debug\netcoreapp2.2\DataAccess.pdb
