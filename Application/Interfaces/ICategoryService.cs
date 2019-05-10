@@ -11,6 +11,8 @@ namespace Application.Interfaces
     {
         //Task<IEnumerable<Category>> ListAsync();
         IEnumerable<Category> GetAll();
+        Category GetById(int id);
+        void Update(Category category);
         void Insert(CategoryDTO dto);
     }
 }

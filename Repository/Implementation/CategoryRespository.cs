@@ -19,6 +19,10 @@ namespace Repository.Implementation
         {
             return _context.Categories;
         }
+        public Category GetById(int id)
+        {
+            return _context.Categories.Find(id);
+        }
 
         public void Insert(Category dto)
         {
@@ -35,7 +39,13 @@ namespace Repository.Implementation
 
         public void Save()
         {
-            _unitOfWork.Save();
+            _unitOfWork.Save();           
+        }
+
+        public void Update(Category category)
+        {
+            _context.Categories.Update(category);
+            this.Save();
         }
     }
 }

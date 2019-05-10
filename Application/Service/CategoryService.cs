@@ -19,6 +19,10 @@ namespace Application.Service
         {
             return _categoryRespository.GetAll();
         }
+        public Category GetById(int id)
+        {
+            return _categoryRespository.GetById(id);
+        }
 
         public void Insert(CategoryDTO dto)
         {
@@ -27,6 +31,11 @@ namespace Application.Service
                 Name = dto.Name
             };
             _categoryRespository.Insert(obj);
+        }
+
+        public void Update(Category category)
+        {
+            _categoryRespository.Update(category);
         }
     }
 }

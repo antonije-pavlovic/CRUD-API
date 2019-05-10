@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.DataTransfer;
 using Application.Interfaces;
+using Domain.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -41,8 +42,15 @@ namespace API.Controllers
         
         // PUT: api/Categories/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult Put(int id, [FromBody] Category value)
         {
+            var cat = _categoryService.GetById(id);
+            if (cat != null)
+            {
+                cat.Name = value.Name;
+                _categoryService.Update(cat);
+            }
+            return Ok(cat);
         }
 
         // DELETE: api/ApiWithActions/5
