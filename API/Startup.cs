@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using API.JWT;
+using API.JWT.AuthService;
+using API.JWT.UserManagamentService;
 using Application.Interfaces;
 using Application.Service;
 using DataAccess;
@@ -54,7 +56,7 @@ namespace API
 
             services.Configure<TokenManagement>(Configuration.GetSection("tokenManagement"));
             var token = Configuration.GetSection("tokenManagement").Get<TokenManagement>();
-            var secret = Encoding.ASCII.GetBytes(token.Secret);
+            var secret = Encoding.ASCII.GetBytes(token.Secret); //
 
             services.AddAuthentication(x =>
             {
@@ -82,7 +84,8 @@ namespace API
                 ValidateIssuer = false,
                 ValidateAudience = false
             };
-
+            services.AddScoped<IAuthenticateService, TokenAuthenticationService>();
+            services.AddScoped<IUserManagementService, UserManagementService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

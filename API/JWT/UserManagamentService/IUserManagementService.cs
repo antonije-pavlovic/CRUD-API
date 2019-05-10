@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace API.JWT.UserManagamentService
 {
-    interface IUserManagementService
+    public interface IUserManagementService
     {
+        bool IsValidUser(string username, string password);
     }
 }

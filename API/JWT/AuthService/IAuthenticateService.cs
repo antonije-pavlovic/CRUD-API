@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace API.JWT.AuthService
 {
-    interface IAuthenticateService
+    public interface IAuthenticateService
     {
+        bool IsAuthenticated(TokenRequest request, out string token);
     }
 }
