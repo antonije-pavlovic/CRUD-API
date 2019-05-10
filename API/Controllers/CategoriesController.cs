@@ -45,7 +45,7 @@ namespace API.Controllers
         public IActionResult Put(int id, [FromBody] Category value)
         {
             var cat = _categoryService.GetById(id);
-            if (cat != null)
+            if (cat != null) //prebaci ovo u servis !
             {
                 cat.Name = value.Name;
                 _categoryService.Update(cat);

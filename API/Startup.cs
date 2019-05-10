@@ -16,6 +16,7 @@ using Microsoft.Extensions.Options;
 using Repository.Implementation;
 using Repository.Interfaces;
 using Repository.UnitOfWork;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace API
 {
@@ -39,11 +40,21 @@ namespace API
             services.AddScoped<ICategoryRespository, CategoryRespository>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "CRUD API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CRUD API V1");
+            });
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
